@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator Modern By:Kahfi</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style >
+		.header {
+			margin: 80px;
+			padding: auto;
+		}
+		.content {
+			margin: 80px;
+		}
+
+		#angka1, #angka2, #hasil {
+			width: 200px;
+			height: 40px;
+		}
+		#operator {
+			height: 40px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h4>KALKULATOR</h4>
+	</div>
+	<div class="content">
+		<input type="text" id="angka1" placeholder="Nilai Pertama">
+		<select id="operator">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value=""></option>
+			<option value="/">/</option>
+			<option value="^">^</option>
+		</select>
+
+		<input type="text" id="angka2" placeholder="Nilai Kedua">
+		<button id="submit" class="btn btn-danger">Submit</button>	
+		<input type="text" id="hasil" placeholder="hasil">
+		<br>
+		<br>
+		<h4>Dwi Yannur Alkahfi</h4>
+	</div>
+	<script>
+		const angkaPertama = document.getElementById('angka1');
+		const angkaKedua = document.getElementById('angka2');
+		const operator = document.getElementById('operator');
+		const hasil = document.getElementById('hasil');
+		
+		
+		submit.addEventListener('click',function(){
+			hasil.value = eval(angka1.value + operator.value + angka2.value);
+		})
+
+	</script>
+</body>
+</html>
